@@ -1,0 +1,17 @@
+﻿h1 {
+    text-align:center;
+    background-color: greenyellow;
+    color:red;
+
+}
+button{
+    color:black;
+    background-color:aqua;
+}
+table{
+    width:50%;
+    color:black;
+}
+#text,#result{
+    color:black;
+}

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table{
+            border:solid black;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title>
+        Test web Site
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+    <div class="container p-4 my-3 bg-primary ">
+    <h1 > Yukti Solution Company </h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="website.html">Home Page</a></li>
+               
+                <li><a href="AboutUS.html">About Us</a></li>
+                <li><a href="ContactUS.html">Contact US</a></li>
+                <li><a href="PErform.html">Perform Some Functions Page </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        Enter Text:<input type="text" id="text" placeholder="Enter text" />
+        Result :<input type="text" id="result" placeholder="See Result here"/><br />
+        <button id="btnUpper"> Convert into Uppercase</button>
+       <button id="btnclength"> Count Length</button>
+    </div>
+        <div class="container">
+
+            <h2> Table</h2>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th> First Name</th>
+                        <th> Last Name</th>
+                        <th> Address</th>
+                        <th> Phone No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Karan </td>
+                        <td> Rao </td>
+                        <td> Mdipur</td>
+                        <td> 24242342</td>
+                    </tr>
+                    <tr>
+                        <td> mohan</td>
+                        <td> kumar</td>
+                        <td> delhi</td>
+                        <td> 557586</td>
+                    </tr>
+                    <tr>
+                        <td> riya</td>
+                        <td> kumari </td>
+                        <td> mumbai</td>
+                        <td> 7268623</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    
+
+<script>
+
+    $("#btnclength").click(function () {
+        var count = $("#text").val();
+        var strlen = count.length;
+        $("#result").val(strlen)
+
+    })
+    $("#btnUpper").click(function () {
+        var upper = $("#text").val();
+        var strupper = upper.toUpperCase();
+        $("#result").val(strupper)
+
+    })
+   
+
+   
+</script>
+
+</body>
+
+</html>
